@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-themes="corporate-clean,nord,tokyo-night,minimal-white,soft-pastel">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI赋能高三班主任 · 让技术成为你的超级助教</title>
+<link rel="stylesheet" href="/tmp/html-ppt-resources/assets/fonts.css">
+<link rel="stylesheet" href="/tmp/html-ppt-resources/assets/base.css">
+<link rel="stylesheet" id="theme-link" href="/tmp/html-ppt-resources/assets/themes/corporate-clean.css">
+<link rel="stylesheet" href="/tmp/html-ppt-resources/assets/animations/animations.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="tpl-presenter-mode-reveal">
+<div class="deck">
+
+  <!-- ============ 1. COVER ============ -->
+  <section class="slide" data-title="封面">
+    <p class="kicker">教育AI分享 · 高三班主任专场</p>
+    <h1 class="h1 anim-fade-up" data-anim="fade-up">AI赋能高三班主任<br><span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">让技术成为你的"超级助教"</span></h1>
+    <p class="lede mt-m">按 <span class="mono">S</span> 进入演讲者视图 · <span class="mono">T</span> 切换主题 · <span class="mono">← →</span> 翻页</p>
+    <div class="speaker">
+      <div class="av"></div>
+      <div><b>刘骁(阿骁)</b><span>钉钉 · AI解决方案架构师</span></div>
+    </div>
+    <div class="deck-footer">
+      <span class="mono">#教育AI #高三班主任 #钉钉</span>
+      <span class="slide-number" data-current="1" data-total="10"></span>
+    </div>
+    <aside class="notes">
+      <p>各位老师好！我是阿骁，来自钉钉。今天非常荣幸能和各位高三班主任面对面交流。</p>
+      <p>我知道在座的每一位都是<strong>身经百战的教育工作者</strong>，带过无数届高三，比我更懂学生、更懂教学。所以我今天不是来"教"大家什么的，而是来分享一个可能帮大家<strong>省下每天2小时</strong>的工具思路。</p>
+      <p>今天的分享大约45分钟，我会用五个真实场景来说明AI怎么帮班主任减负。每个场景都有具体操作步骤，回去就能用。最后留15分钟给大家提问和体验。</p>
+      <p>如果有一个助手能帮你省下2小时/天，你会用来做什么？带着这个问题，我们开始。</p>
+    </aside>
+  </section>
+
+  <!-- ============ 2. AGENDA ============ -->
+  <section class="slide" data-title="议程">
+    <p class="kicker">agenda</p>
+    <h2 class="h2">今天分享的 6 个部分</h2>
+    <div class="stack mt-l">
+      <div class="agenda-row"><span class="num">01</span><span class="t">高三班主任的时间都去哪了</span><span class="d">~5min</span></div>
+      <div class="agenda-row"><span class="num">02</span><span class="t">AI到底是什么，不是什么</span><span class="d">~5min</span></div>
+      <div class="agenda-row"><span class="num">03</span><span class="t">五大AI实战场景逐一拆解</span><span class="d">~25min</span></div>
+      <div class="agenda-row"><span class="num">04</span><span class="t">标杆案例：浙大钉与教培实践</span><span class="d">~5min</span></div>
+      <div class="agenda-row"><span class="num">05</span><span class="t">动手体验：搭建你的第一个AI助理</span><span class="d">~10min</span></div>
+      <div class="agenda-row"><span class="num">06</span><span class="t">总结 + Q&amp;A</span><span class="d">~10min</span></div>
+    </div>
+    <aside class="notes">
+      <p>先过一下今天的安排。</p>
+      <p>第一部分我想先和大家<strong>对齐痛点</strong>——高三班主任到底有多忙？我用一张时间饼图来展示，看看是不是你们的真实写照。</p>
+      <p>第二部分做个<em>认知校准</em>。很多人对AI有误解，觉得它要么万能要么没用。我会用三个类比帮大家建立正确预期。</p>
+      <p>第三部分是今天的<strong>核心内容</strong>——五个具体场景，每个都有操作步骤，回去照着做就行。</p>
+      <p>第四部分讲两个真实案例，证明这些方案不是纸上谈兵。</p>
+      <p>第五部分我们一起动手，现场搭一个AI助理试试效果。</p>
+      <p>最后答疑。有任何问题随时打断我。</p>
+    </aside>
+  </section>
+
+  <!-- ============ 3. PAIN POINTS ============ -->
+  <section class="slide" data-title="痛点">
+    <p class="kicker">// part 01 · 痛点共鸣</p>
+    <h2 class="h2">高三班主任的<br><span class="accent">时间都去哪了？</span></h2>
+    <div class="grid g2 mt-l">
+      <div class="card card-accent">
+        <h4>💬 家校沟通</h4>
+        <p class="dim">每天回复30+条家长消息，重复解答相似问题，晚上10点还在回微信</p>
+      </div>
+      <div class="card card-accent">
+        <h4>📊 学情分析</h4>
+        <p class="dim">每次模考后手动整理成绩单、对比排名、标记波动学生，Excel反复调整3小时</p>
+      </div>
+      <div class="card card-accent">
+        <h4>👤 个性化关注</h4>
+        <p class="dim">班上40-50人精力有限，只能关注"两头"，中间层容易被忽视</p>
+      </div>
+      <div class="card card-accent">
+        <h4>📝 材料准备</h4>
+        <p class="dim">每周班会策划、家长会PPT、发言稿，准备工作占据大量休息时间</p>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>我先问一个问题：在座各位，有没有觉得<strong>自己每天花在"非教学"事务上的时间，比花在学生身上的还多</strong>？</p>
+      <p>看这四张卡片。第一张，家校沟通——每天30条以上的家长消息，很多问题其实是重复的："月考什么时候""晚自习几点""孩子最近怎么样"。你一遍遍回答，晚上10点手机还在响。</p>
+      <p>第二张，学情分析。每次模考完，你要把成绩录进Excel，算排名、画趋势图、找临界生。<strong>3个小时过去了，还没开始找学生谈心</strong>。</p>
+      <p>第三张，个性化关注。班上四五十个孩子，你真的了解每一个吗？尖子生和后进生你盯得紧，但那些"不上不下"的孩子呢？他们其实最需要被看见。</p>
+      <p>第四张，材料准备。每周班会要策划主题，家长会要做PPT写发言稿。<strong>这些工作重要但不紧急，永远排在最后，却吃掉你最多的休息时间</strong>。</p>
+      <p>如果有一个助手能把这四件事各帮你省一半时间，你觉得值不值得试一试？</p>
+    </aside>
+  </section>
+
+  <!-- ============ 4. AI CLARIFICATION ============ -->
+  <section class="slide" data-title="AI认知">
+    <p class="kicker">// part 02 · 认知对齐</p>
+    <h2 class="h2">AI是<span class="accent">超级助教</span>，<br>不是万能机器人</h2>
+    <div class="grid g3 mt-l">
+      <div class="card">
+        <h4>✅ AI是什么</h4>
+        <p class="dim">超级计算器 + 百科全书 + 速记员。处理信息快、不累、不会忘</p>
+      </div>
+      <div class="card">
+        <h4>❌ AI不是什么</h4>
+        <p class="dim">不会取代老师、不是百分百准确、不能感知情绪、需要你"教"它</p>
+      </div>
+      <div class="card card-accent">
+        <h4>💡 核心定位</h4>
+        <p class="dim">AI处理<strong>信息和流程</strong>，班主任处理<strong>情感和关系</strong></p>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>在讲具体场景之前，我想先花两分钟做一个<strong>认知校准</strong>。</p>
+      <p>很多老师听到"AI"两个字，要么觉得"这东西太高科技了我用不了"，要么觉得"AI要取代老师了"。这两种想法都不对。</p>
+      <p>左边这张卡片：AI是什么？把它想象成三个角色的合体——<strong>超级计算器</strong>（算成绩比你快100倍）、<strong>百科全书</strong>（你问它什么它都知道）、<strong>速记员</strong>（开会时帮你记笔记）。它处理信息的速度远超人类，而且不累、不会忘。</p>
+      <p>中间这张：AI不是什么？它<strong>不会取代老师</strong>。学生的心理状态、情绪波动、家庭变故，只有人能感知和回应。它也<strong>不是百分百准确</strong>，有时候会"一本正经地胡说八道"。它还需要你来"教"它——告诉它你们班的规矩、你的评价标准。</p>
+      <p>右边这张是核心：<strong>AI处理信息和流程，班主任处理情感和关系</strong>。这两件事分开，效率才能最大化。</p>
+    </aside>
+  </section>
+
+  <!-- ============ 5. SCENARIO 1 ============ -->
+  <section class="slide" data-title="场景1·AI助理">
+    <p class="kicker">// part 03 · 场景一</p>
+    <h2 class="h2">🤖 AI助理自动应答<br><span class="accent">家长常见问题</span></h2>
+    <div class="grid g2 mt-l">
+      <div class="card">
+        <h4>以前</h4>
+        <p class="dim">每天回复30+条重复消息<br>晚上10点还在回微信<br>同样的话说了100遍</p>
+      </div>
+      <div class="card card-accent">
+        <h4>现在</h4>
+        <p class="dim">AI自动应答80%常规问题<br>班主任只处理特殊情况<br>知识库越用越聪明</p>
+      </div>
+    </div>
+    <div class="stack mt-m">
+      <div class="agenda-row"><span class="num">1</span><span class="t">群设置 → 智能群助手 → 添加AI助理</span></div>
+      <div class="agenda-row"><span class="num">2</span><span class="t">上传班级作息表、考试安排、校规班规到知识库</span></div>
+      <div class="agenda-row"><span class="num">3</span><span class="t">配置欢迎语和兜底话术，保留人工通道</span></div>
+      <div class="agenda-row"><span class="num">4</span><span class="t">测试验证 → 家长会上介绍 → 持续优化</span></div>
+    </div>
+    <aside class="notes">
+      <p>第一个场景，也是<strong>最容易上手、见效最快</strong>的一个。</p>
+      <p>各位家长最常问的问题其实就那几类：月考什么时候、晚自习几点结束、孩子最近表现怎么样、请假怎么走流程。这些问题你回答了100遍，但每一遍都得打字、解释、安抚。</p>
+      <p>现在你可以把这些信息<strong>一次性录入AI助理的知识库</strong>。家长在群里问，AI自动回答。回答不了的，再转给你。</p>
+      <p>操作很简单，四步：第一步，在班级群里添加AI助理机器人；第二步，把作息表、考试安排这些文档上传到知识库；第三步，设置好欢迎语和兜底话术，比如"复杂问题班主任会在2小时内回复"；第四步，测试一下确认效果没问题，然后在家长会上跟家长们介绍一下这个新功能。</p>
+      <p>有个关键点：<strong>一定要保留人工兜底通道</strong>。不要让家长觉得"被机器敷衍了"。AI是助手，不是替代品。</p>
+    </aside>
+  </section>
+
+  <!-- ============ 6. SCENARIO 2 ============ -->
+  <section class="slide" data-title="场景2·学情分析">
+    <p class="kicker">// part 03 · 场景二</p>
+    <h2 class="h2">📊 AI数据分析<br><span class="accent">自动生成学情报告</span></h2>
+    <div class="grid g2 mt-l">
+      <div class="card">
+        <h4>以前</h4>
+        <p class="dim">Excel手动整理3小时<br>公式容易写错<br>做完分析没精力找学生谈</p>
+      </div>
+      <div class="card card-accent">
+        <h4>现在</h4>
+        <p class="dim">上传成绩单，5分钟出报告<br>含折线图、排名变动表<br>自然语言提问即可</p>
+      </div>
+    </div>
+    <div class="stack mt-m">
+      <div class="agenda-row"><span class="num">1</span><span class="t">新建AI表格，创建"成绩管理"数据表</span></div>
+      <div class="agenda-row"><span class="num">2</span><span class="t">录入3次以上模考成绩（支持Excel导入）</span></div>
+      <div class="agenda-row"><span class="num">3</span><span class="t">点击「AI分析」→ 自然语言提问</span></div>
+      <div class="agenda-row"><span class="num">4</span><span class="t">导出报告用于班会/家长会展示</span></div>
+    </div>
+    <aside class="notes">
+      <p>第二个场景，解决的是<strong>学情分析耗时</strong>的问题。</p>
+      <p>每次模考完，你是不是要打开Excel，把成绩一个个录进去，然后算总分、排名次、画趋势图、找出一本线临界生？<strong>3个小时过去了，你已经累了，哪还有精力去找学生谈心？</strong></p>
+      <p>现在用钉钉AI表格，你把成绩单导进去，然后用<strong>自然语言提问</strong>就行。比如你说"帮我分析每位同学近三次考试的总分变化趋势，标记连续下降超过20名的学生"，AI就会自动生成包含折线图和排名变动表的分析报告。</p>
+      <p>你还可以追问："哪些同学数学进步最大？""一本线临界生有哪些？"<strong>不需要写任何公式</strong>，像跟人说话一样提问就行。</p>
+      <p>更进一步，你可以设置<strong>自动化预警规则</strong>：当某个学生排名连续两次下降超过20名，系统自动通知你。这样你就不会漏掉那些"悄悄下滑"的孩子了。</p>
+    </aside>
+  </section>
+
+  <!-- ============ 7. SCENARIO 3-5 OVERVIEW ============ -->
+  <section class="slide" data-title="场景3-5概览">
+    <p class="kicker">// part 03 · 场景三至五</p>
+    <h2 class="h2">更多AI实战场景</h2>
+    <div class="grid g3 mt-l">
+      <div class="card card-accent">
+        <h4>📝 AI作业点评</h4>
+        <p class="dim">家校本+AI初步批阅<br>老师审核确认<br>50份作文从周末缩到2小时</p>
+      </div>
+      <div class="card card-accent">
+        <h4>🎙️ AI听记纪要</h4>
+        <p class="dim">班会/家长会自动转写<br>生成结构化纪要+待办<br>一键分享给未参会家长</p>
+      </div>
+      <div class="card card-accent">
+        <h4>✍️ AI辅助备课</h4>
+        <p class="dim">输入班会主题生成大纲<br>追加细化要求迭代<br>融入本班实际案例润色</p>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>接下来快速过三个场景，每个3分钟左右。</p>
+      <p><strong>第三个，AI作业点评。</strong>学生在钉钉家校本提交作业后，AI可以生成初步批阅意见。注意，这只是"初稿参考"，最终评价一定由你来确认。特别适合客观题和议论文这类结构化写作。50份作文原来要花整个周末，现在AI帮你完成基础批阅，你只需要聚焦深度指导，2小时搞定。</p>
+      <p><strong>第四个，AI听记。</strong>这个我个人最推荐。开班会或家长会时，打开手机钉钉的AI听记功能，它会自动录音转写，会后生成结构化纪要，包含议题摘要、关键决议、待办事项。你可以一键分享到家长群，没来的家长也能看到全部内容。待办事项还会自动同步到钉钉待办应用，到期提醒。</p>
+      <p><strong>第五个，AI辅助备课。</strong>比如你要准备一节"考前心理调适"主题班会，直接告诉AI你的需求，它会生成大纲和演讲稿框架。然后你追加要求："加入3个真实案例""增加呼吸放松练习环节"。最后把AI生成的内容复制到钉钉文档里，融入你们班的真实故事和你的个人风格。<strong>AI提供骨架，你注入灵魂</strong>。</p>
+    </aside>
+  </section>
+
+  <!-- ============ 8. CASE STUDIES ============ -->
+  <section class="slide" data-title="标杆案例">
+    <p class="kicker">// part 04 · 他山之石</p>
+    <h2 class="h2">别人已经<span class="accent">跑通了</span></h2>
+    <div class="grid g2 mt-l">
+      <div class="card card-accent">
+        <h4>🏫 浙江大学 · 浙大钉</h4>
+        <p class="dim">10万+通讯录 · 9万日活<br>"智云课堂"打破时空边界<br>三种混合教学模式常态化运行</p>
+      </div>
+      <div class="card card-accent">
+        <h4>🏢 头部教培机构</h4>
+        <p class="dim">9万+员工统一钉钉平台<br>覆盖全国1089个教学点<br>平台化移动化管理模式</p>
+      </div>
+    </div>
+    <p class="dim mt-m" style="text-align:center;font-size:1.1em;">启示：从一个<strong>小场景</strong>切入，先跑通再扩展</p>
+    <aside class="notes">
+      <p>讲了这么多场景，你可能会想："说得挺好，但真的有人用吗？"</p>
+      <p>有的。左边是<strong>浙江大学</strong>的案例。浙大和钉钉合作打造了"浙大钉"，通讯录里有10万人，每天9万人在用。他们的"智云课堂"实现了三种教学模式：空空模式（师生都在线）、地空模式（老师在教室学生在线）、混合模式（随意组合）。<strong>打破了教室的物理边界</strong>。</p>
+      <p>右边是一个头部教培机构的案例。9万多名员工，1089个教学点，全部用钉钉统一管理。2020年引入钉钉后，首次实现了平台化、移动化的管理模式。</p>
+      <p>这两个案例规模都很大，但对我们的启示是一样的：<strong>不需要一步到位</strong>。浙大也是从一个移动端入口开始的，教培机构也是从内部沟通开始的。对于我们一个班级来说，先从AI助理或者AI听记开始，跑通一个小场景，再逐步扩展。</p>
+    </aside>
+  </section>
+
+  <!-- ============ 9. HANDS-ON ============ -->
+  <section class="slide" data-title="动手体验">
+    <p class="kicker">// part 05 · 动手体验</p>
+    <h2 class="h2">现在就来<br><span class="accent">搭一个AI助理</span></h2>
+    <div class="stack mt-l">
+      <div class="agenda-row"><span class="num">1</span><span class="t">打开手机钉钉 → 进入任意群 → 群设置</span></div>
+      <div class="agenda-row"><span class="num">2</span><span class="t">智能群助手 → 添加机器人 → AI助理</span></div>
+      <div class="agenda-row"><span class="num">3</span><span class="t">创建知识库 → 上传一份班级作息表</span></div>
+      <div class="agenda-row"><span class="num">4</span><span class="t">在群里发一条测试消息，看AI怎么回答</span></div>
+      <div class="agenda-row"><span class="num">5</span><span class="t">调整不满意的地方，再测一次</span></div>
+    </div>
+    <p class="dim mt-m">⏱ 预计 5-8 分钟 · 遇到问题举手，我过来帮你</p>
+    <aside class="notes">
+      <p>好，到了我最喜欢的环节——<strong>动手体验</strong>。</p>
+      <p>光听我说没用，你自己试一次才知道这东西到底好不好使。现在请大家拿出手机，打开钉钉，跟着我一步步来。</p>
+      <p>第一步，进入任意一个群（测试群也行），点群设置。第二步，找到"智能群助手"，添加机器人，选"AI助理"。第三步，给它创建一个知识库，随便上传一份文档，比如班级作息表。第四步，在群里发一条消息测试，比如"早自习几点开始"，看看AI能不能正确回答。</p>
+      <p>如果回答不对，别急，<strong>这就是AI现阶段真实的水平</strong>。你可以修改知识库里的内容，或者调整AI的配置，再试一次。</p>
+      <p>整个过程大概5到8分钟。遇到任何问题举手，我走过来帮你。不要怕出错，<strong>出错才是学习的最佳时机</strong>。</p>
+    </aside>
+  </section>
+
+  <!-- ============ 10. TAKEAWAYS ============ -->
+  <section class="slide" data-title="总结">
+    <p class="kicker">// part 06 · 总结</p>
+    <h2 class="h2">回去就能做的<br><span class="accent">三件事</span></h2>
+    <div class="stack mt-l">
+      <div class="agenda-row"><span class="num">①</span><span class="t">开通AI听记，录下一次班会或家长会</span><span class="d">10min</span></div>
+      <div class="agenda-row"><span class="num">②</span><span class="t">用AI表格分析下次模考成绩</span><span class="d">30min</span></div>
+      <div class="agenda-row"><span class="num">③</span><span class="t">在班级群配置一个FAQ AI助理</span><span class="d">20min</span></div>
+    </div>
+    <div class="grid g2 mt-l">
+      <div class="card">
+        <h4>⚠️ 注意事项</h4>
+        <p class="dim">不用技术术语 · 承认AI局限<br>强调人的不可替代 · 保护学生隐私</p>
+      </div>
+      <div class="card card-accent">
+        <h4>💡 核心理念</h4>
+        <p class="dim">AI是你的<strong>超级助教</strong><br>你才是学生的<strong>灵魂导师</strong></p>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>最后总结一下。今天讲了五个场景，但我不指望大家回去全用上。<strong>挑一个你最痛的点，先做起来</strong>。</p>
+      <p>我给你列了三件"回去就能做的事"，按难度从低到高排列。</p>
+      <p>第一件，开通AI听记。这个最简单，下次班会或家长会的时候打开就行，10分钟搞定。你会惊讶于它生成的纪要有多完整。</p>
+      <p>第二件，用AI表格分析下次模考成绩。把成绩单导进去，问几个问题，5分钟出报告。省下来的3个小时，拿去跟几个学生好好聊聊。</p>
+      <p>第三件，在班级群配一个FAQ AI助理。花20分钟上传几份文档，测试一下，然后在家长会上介绍给家长们。</p>
+      <p>最后强调两点：第一，<strong>AI是你的超级助教，不是替代品</strong>。学生的心理状态、情绪波动、家庭变故，只有你能感知和回应。第二，<strong>从小场景切入</strong>，不要贪多。先用起来一个，跑通了再扩展。</p>
+      <p>谢谢大家！现在是Q&A时间，有任何问题都可以提。</p>
+    </aside>
+  </section>
+
+</div>
+<script src="/tmp/html-ppt-resources/assets/runtime.js"></script>
+</body>
+</html>
